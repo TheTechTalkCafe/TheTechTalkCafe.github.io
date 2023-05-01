@@ -1,3 +1,4 @@
+/* All elements */
 * {
 	box-sizing: border-box;
 	font-family: "Montserrat", sans-serif;
@@ -6,16 +7,20 @@
 	padding: 0;
 }
 
+/* Root selector -> Variables definition */
 :root {
 	/* Color variables definition */
 	--black: #232323;
 	--black-fade: #232323ee;
-	--white: #d4d4d4;
+	--white: #aaaaaa;
 	--gray: #525252;
 	--light-gray: #7f7f7f;
 	--purple: #2a183f;
 }
 
+/* 
+	BODY 
+*/
 body {
 	background-image: linear-gradient(var(--black), var(--purple));
 	background-size: cover;
@@ -23,14 +28,70 @@ body {
 	background-attachment: fixed;
 }
 
+/* 
+	HEADER 
+*/
 header {
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 5em;
+	height: 6em;
 	width: 100vw;
 }
 
+/* Hamburger menu */
+#hamburger-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 8em;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hamburger {
+	width: 4em;
+	height: 4em;
+	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.hamburger span {
+	display: block;
+	width: 100%;
+	height: 0.5em;
+	margin: 0.25em 0;
+	border-radius: 0.5em;
+	background-color: var(--gray);
+	transition: all 0.15s;
+	transform-origin: 0px 100%;
+}
+
+.hamburger:hover > span {
+	background-color: var(--white);
+}
+
+.active-line1 {
+	transform: rotate(45deg) translate(-0.05em, -0.65em);
+}
+
+.active-line2 {
+	opacity: 0;
+	margin-left: -4em;
+}
+
+.active-line3 {
+	transform: rotate(-45deg) translate(0.25em, 0.75em);
+}
+
+/* Language selector */
 #selector {
 	position: absolute;
 	top: 0;
@@ -55,6 +116,7 @@ header {
 	font-weight: 600;
 
 	cursor: pointer;
+	transition: 0.15s;
 }
 
 #selector select:hover {
