@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+	color: var(--white);
+	margin: 0 auto;
+	padding: 0;
+}
+
+:root {
+	/* Color variables definition */
+	--black: #232323;
+	--black-fade: #232323ee;
+	--white: #d4d4d4;
+	--gray: #525252;
+	--light-gray: #7f7f7f;
+	--purple: #2a183f;
+}
+
+body {
+	background-image: linear-gradient(var(--black), var(--purple));
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5em;
+	width: 100vw;
+}
+
+#selector {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 15em;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#selector select {
+	width: 8em;
+	height: 3em;
+	border-radius: 0.5em;
+	border: 0px;
+	background-color: var(--gray);
+
+	text-align: center;
+	font-size: medium;
+	font-weight: 600;
+
+	cursor: pointer;
+}
+
+#selector select:hover {
+	background-color: var(--light-gray);
+}

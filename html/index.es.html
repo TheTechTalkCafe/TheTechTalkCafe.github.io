@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="/css/styles.css" />
+		<!-- TAB icon -->
+		<link rel="icon" href="/img/taza_icon.png" />
+		<!-- Line Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+		/>
+		<!-- Google Fonts Monstserrat -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+		<title>TheTechTalkCafe Podcast</title>
+	</head>
+	<body>
+		<header>
+			<div id="selector">
+				<select
+					name="language"
+					onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"
+				>
+					<option value="index.en.html">🇬🇧 Inglés</option>
+					<option value="index.es.html" selected>🇪🇸 Español</option>
+				</select>
+			</div>
+		</header>
+
+		<!-- JS -->
+		<script src="/js/script.js"></script>
+	</body>
+</html>

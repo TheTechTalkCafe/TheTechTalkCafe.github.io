@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TheTechTalkCafe Podcast</title>
+	</head>
+	<body>
+		<!-- 
+			This page works as a preferred language redirector
+		-->
+		<script>
+			// ES: es-ES; es
+			// EN: en; en-US; en-UK
+
+			var userLang = navigator.language || navigator.userLanguage; // Check user preferred language - Comprobar el lenguaje de preferencia
+			const patternES = /es/i; // Define the pattern for ES - Definir el patrón para ES
+
+			if (patternES.test(userLang)) {
+				window.location.href = "html/index.es.html";
+			} else {
+				window.location.href = "html/index.en.html";
+			}
+		</script>
+	</body>
+</html>
