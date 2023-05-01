@@ -16,6 +16,12 @@
 	--gray: #525252;
 	--light-gray: #7f7f7f;
 	--purple: #2a183f;
+	--orange: #ff6b00;
+}
+
+::selection {
+	background-color: var(--orange);
+	color: var(--black);
 }
 
 /* 
@@ -61,6 +67,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	z-index: 5;
 }
 
 .hamburger span {
@@ -80,6 +87,7 @@ header {
 
 .active-line1 {
 	transform: rotate(45deg) translate(-0.05em, -0.65em);
+	color: var(--white);
 }
 
 .active-line2 {
@@ -89,6 +97,7 @@ header {
 
 .active-line3 {
 	transform: rotate(-45deg) translate(0.25em, 0.75em);
+	color: var(--white);
 }
 
 /* Language selector */
@@ -121,6 +130,26 @@ header {
 
 #selector select:hover {
 	background-color: var(--light-gray);
+}
+
+/* ASIDE */
+aside {
+	position: absolute;
+	left: 0;
+	translate: -100%;
+	z-index: 2;
+
+	width: 20em;
+	height: 100vh;
+	padding-top: 10vh;
+	padding-left: 3vw;
+
+	background-color: var(--black-fade);
+	transition: all 0.2s;
+}
+
+.aside-active {
+	translate: 0%;
 }
 
 /* MAIN */

@@ -7,9 +7,11 @@ document.querySelector(".hamburger").addEventListener("click", showHamburguerMen
 var line1 = document.querySelector(".line1");
 var line2 = document.querySelector(".line2");
 var line3 = document.querySelector(".line3");
+var aside = document.querySelector(".aside");
 
 function showHamburguerMenu() {
 	line1.classList.toggle("active-line1");
 	line2.classList.toggle("active-line2");
 	line3.classList.toggle("active-line3");
+	aside.classList.toggle("aside-active");
 }
