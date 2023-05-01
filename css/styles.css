@@ -35,7 +35,7 @@ header {
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 6em;
+	height: 10vh;
 	width: 100vw;
 }
 
@@ -121,4 +121,25 @@ header {
 
 #selector select:hover {
 	background-color: var(--light-gray);
+}
+
+/* MAIN */
+main {
+	position: absolute;
+	top: 10vh;
+	width: 100%;
+	height: 85vh;
+	/* Temporary */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* FOOTER */
+footer {
+	position: absolute;
+	bottom: 0;
+	height: 5vh;
+	width: 100%;
+	opacity: 0.4;
 }
