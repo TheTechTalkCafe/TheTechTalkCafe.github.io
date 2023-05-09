@@ -170,5 +170,25 @@ footer {
 	bottom: 0;
 	height: 5vh;
 	width: 100%;
-	opacity: 0.4;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer div {
+	width: 30vw;
+	height: auto;
+
+	display: flex;
+}
+
+footer a {
+	text-decoration: none;
+	color: var(--gray);
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: var(--white);
 }
