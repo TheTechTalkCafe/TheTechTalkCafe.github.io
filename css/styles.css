@@ -139,10 +139,11 @@ aside {
 	translate: -100%;
 	z-index: 2;
 
-	width: 20em;
+	width: 17.5vw;
 	height: 100vh;
 	padding-top: 10vh;
-	padding-left: 3vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
 
 	background-color: var(--black-fade);
 	transition: all 0.2s;
@@ -152,12 +153,58 @@ aside {
 	translate: 0%;
 }
 
+.aside-item {
+	display: block;
+	width: 100%;
+	margin-bottom: 1vh;
+	padding: 2vh 1vw;
+
+	text-decoration: none;
+	cursor: pointer;
+	color: var(--light-gray);
+	font-size: 1.75rem;
+	border-radius: 0.5em;
+	border: 0.1rem solid transparent;
+
+	transition: 0.25s;
+}
+
+.aside-item i {
+	float: right;
+	color: inherit;
+}
+
+.aside-item:hover {
+	color: var(--white);
+	border: 0.1rem solid var(--light-gray);
+}
+
+#aside-footer {
+	position: inherit;
+	bottom: 1vh;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+#aside-footer a {
+	text-decoration: none;
+	cursor: pointer;
+	color: var(--light-gray);
+	transition: 0.25s;
+}
+
+#aside-footer a:hover {
+	color: var(--white);
+}
+
 /* MAIN */
 main {
 	position: absolute;
 	top: 10vh;
 	width: 100%;
 	height: 85vh;
+
 	/* Temporary */
 	display: flex;
 	justify-content: center;
