@@ -14,6 +14,6 @@ A podcast about tech and engineering.
 
 ### Podcast page (click on logo)
 
-<a href="https://thetecktalkcafe.github.io/"><img src="img/logo_gif.gif" width="350" style="display: block;
+<a href="https://thetecktalkcafe.github.io/" target="_blank"><img src="img/logo_gif.gif" width="350" style="display: block;
 												 margin-left: auto;
 												 margin-right: auto;"/></a>
