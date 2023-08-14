@@ -24,13 +24,9 @@
 	<body>
 		<!-- HEADER -->
 		<header>
-			<div id="hamburger-container">
-				<div class="hamburger">
-					<span class="line1"></span>
-					<span class="line2"></span>
-					<span class="line3"></span>
-				</div>
-			</div>
+			<button id="hamburger-container" onclick="showAside()">
+				<i class="las la-bars"></i>
+			</button>
 			<div id="selector">
 				<select
 					name="language"
@@ -41,45 +37,62 @@
 				</select>
 			</div>
 		</header>
+		<!--/ HEADER -->
+
 		<!-- ASIDE -->
-		<aside class="aside">
-			<a class="aside-item" href="/html/soon.html"
-				>Episodes <i class="las la-podcast"></i
-			></a>
-			<a class="aside-item" href="/html/soon.html"
-				>About Us <i class="las la-question-circle"></i
-			></a>
-			<a class="aside-item" href="/html/soon.html"
-				>Members <i class="las la-users-cog"></i
-			></a>
-			<a class="aside-item" href="/html/soon.html"
-				>Products <i class="las la-store-alt"></i
-			></a>
-			<a class="aside-item" href="/html/soon.html"
-				>Contact <i class="las la-mail-bulk"></i
-			></a>
-			<div id="aside-footer">
-				<a
-					href="https://github.com/TheTeckTalkCafe/TheTeckTalkCafe.github.io"
-					target="_blank"
-				>
-					This page repository on GitHub <i class="lab la-github"></i
-				></a>
+		<aside id="aside">
+			<!-- Aside Content -->
+			<div class="content">
+				<!-- Close Hamburger -->
+				<button id="close-hamburger" onclick="closeAside()">
+					<i class="las la-times-circle"></i>
+					AAAA
+				</button>
+				<!--/ Close Hamburger -->
+
+				<!-- Items -->
+				<div id="items">
+					<a class="aside-item" href="/html/soon.html"
+						>Episodes <i class="las la-podcast"></i
+					></a>
+					<a class="aside-item" href="/html/soon.html"
+						>About Us <i class="las la-question-circle"></i
+					></a>
+					<a class="aside-item" href="/html/soon.html"
+						>Members <i class="las la-users-cog"></i
+					></a>
+					<a class="aside-item" href="/html/soon.html"
+						>Products <i class="las la-store-alt"></i
+					></a>
+					<a class="aside-item" href="/html/soon.html"
+						>Contact <i class="las la-mail-bulk"></i
+					></a>
+				</div>
+				<!--/ Items -->
 			</div>
+			<!--/ Aside Content -->
 		</aside>
+		<!--/ ASIDE -->
+
 		<!-- MAIN -->
 		<main>
-			<h1>Coming soon ...</h1>
+			<h1>The Tech Talk Cafe</h1>
+			<p>
+				Welcome and enjoy our tech stuff discussions every saturday at
+				22:00/10 pm
+			</p>
+
+			<p>This podcast is currently under development</p>
+			<p>There will be news soon</p>
 		</main>
+		<!--/ MAIN -->
+
 		<!-- FOOTER -->
-		<footer>
-			<div>
-				<h4><a href="/html/soon.html">About</a></h4>
-				<h4><a href="/html/soon.html">Contact</a></h4>
-				<h4><a href="/html/soon.html">Products</a></h4>
-			</div>
-		</footer>
+		<footer></footer>
+		<!--/ FOOTER -->
+
 		<!-- JS -->
 		<script src="/js/script.js"></script>
+		<script src="/js/welcome.js"></script>
 	</body>
 </html>
