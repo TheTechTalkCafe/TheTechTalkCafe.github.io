@@ -13,7 +13,7 @@ _______ _       _______        _  _______    _ _     _____       __
   |_|  |_| |_|\\___|_|\\___|\\___|_| |_|_|\\__,_|_|_|\\_\\\\_____\\__,_|_| \\___|
 																							
 `;
-var msg;
+var msg = "";
 
 if (patternES.test(prefLang)) {
 	msg += "Bienvenido a ...\n" + asciiArt + "\nEl podcast de tecnología y más!\n\nSi Estás viendo esto quiere decir que probablemente sepas algo más sobre tecnología... Entonces diviértete con nuestro contenido!"
@@ -22,3 +22,5 @@ if (patternES.test(prefLang)) {
 }
 
 console.log(msg);
+
+// TODO -> On changing languages, display correct message (now it persists)
