@@ -11,96 +11,78 @@
 :root {
 	/* Color variables definition */
 	--black: #232323;
-	--black-fade: #232323ee;
-	--white: #aaaaaa;
+	--white: #ccc;
 	--gray: #525252;
 	--light-gray: #7f7f7f;
+	/* Color scheme main colors */
 	--purple: #2a183f;
 	--orange: #ff6b00;
 }
 
+/* Selection color scheme */
 ::selection {
 	background-color: var(--orange);
 	color: var(--black);
 }
 
-/* 
-	BODY 
-*/
+::-moz-selection {
+	/* Code for Firefox */
+	background-color: var(--orange);
+	color: var(--black);
+}
+
+/* BODY -*/
 body {
 	background-image: linear-gradient(var(--black), var(--purple));
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+/*- BODY */
 
-/* 
-	HEADER 
-*/
+/* HEADER -*/
 header {
 	position: absolute;
+	position: fixed;
+
 	top: 0;
 	left: 0;
 	height: 10vh;
-	width: 100vw;
+	width: 100%;
+	z-index: 2;
 }
 
-/* Hamburger menu */
+/* Hamburger menu -*/
 #hamburger-container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 8em;
-	height: 100%;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.hamburger {
-	width: 4em;
-	height: 4em;
+	background-color: transparent;
+	border: none;
 	cursor: pointer;
 
+	position: absolute;
+	top: 50%;
+	left: 3em;
+	transform: translate(0, -50%);
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
-	z-index: 5;
 }
 
-.hamburger span {
-	display: block;
-	width: 100%;
-	height: 0.5em;
-	margin: 0.25em 0;
-	border-radius: 0.5em;
-	background-color: var(--gray);
-	transition: all 0.15s;
-	transform-origin: 0px 100%;
+#hamburger-container i {
+	font-size: 50px;
+	color: var(--light-gray);
+	cursor: pointer;
+
+	transition: 0.25s;
 }
 
-.hamburger:hover > span {
-	background-color: var(--white);
+#hamburger-container i:hover {
+	font-weight: bolder;
+	color: inherit;
 }
+/*- Hamburger menu */
 
-.active-line1 {
-	transform: rotate(45deg) translate(-0.05em, -0.65em);
-	color: var(--white);
-}
-
-.active-line2 {
-	opacity: 0;
-	margin-left: -4em;
-}
-
-.active-line3 {
-	transform: rotate(-45deg) translate(0.25em, 0.75em);
-	color: var(--white);
-}
-
-/* Language selector */
+/* Language selector -*/
 #selector {
 	position: absolute;
 	top: 0;
@@ -131,33 +113,77 @@ header {
 #selector select:hover {
 	background-color: var(--light-gray);
 }
+/*- Language selector */
+/*- HEADER */
 
-/* ASIDE */
+/* ASIDE -*/
 aside {
 	position: absolute;
+	position: fixed;
+	top: 0;
 	left: 0;
-	translate: -100%;
-	z-index: 2;
+	z-index: 3;
+	visibility: hidden;
 
-	width: 17.5vw;
+	width: 22.5vw;
 	height: 100vh;
-	padding-top: 10vh;
-	padding-left: 1vw;
-	padding-right: 1vw;
 
-	background-color: var(--black-fade);
+	background-color: var(--black);
 	transition: all 0.2s;
 }
 
-.aside-active {
-	translate: 0%;
+aside .content {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#close-hamburger {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 2;
+}
+
+#close-hamburger i {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	font-size: 50px;
+	color: var(--light-gray);
+	cursor: pointer;
+
+	transition: 0.25s;
+}
+
+#close-hamburger i:hover {
+	color: inherit;
+}
+
+#items {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: end;
 }
 
 .aside-item {
 	display: block;
-	width: 100%;
-	margin-bottom: 1vh;
-	padding: 2vh 1vw;
+	width: 12.5em;
+	padding: 1em;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
 
 	text-decoration: none;
 	cursor: pointer;
@@ -176,66 +202,56 @@ aside {
 
 .aside-item:hover {
 	color: var(--white);
+	font-weight: bolder;
 	border: 0.1rem solid var(--light-gray);
 }
 
-#aside-footer {
-	position: inherit;
-	bottom: 1vh;
-	left: 0;
-	width: 100%;
-	text-align: center;
-}
+/*- ASIDE */
 
-#aside-footer a {
-	text-decoration: none;
-	cursor: pointer;
-	color: var(--light-gray);
-	transition: 0.25s;
-}
+/* MAIN -*/
 
-#aside-footer a:hover {
-	color: var(--white);
-}
+/*
+	All this configuratin might be not the final one
+*/
 
-/* MAIN */
 main {
 	position: absolute;
-	top: 10vh;
+	top: 0;
 	width: 100%;
-	height: 85vh;
+	min-height: 100vh;
 
 	/* Temporary */
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 
-/* FOOTER */
+main h1 {
+	font-size: 4em;
+	margin-bottom: 1em;
+}
+
+main p {
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+main p:nth-child(3) {
+	color: red;
+	font-size: 1.75em;
+	font-weight: 700;
+	margin-top: 5em;
+}
+/*- MAIN */
+
+/* FOOTER -*/
 footer {
 	position: absolute;
 	bottom: 0;
-	height: 5vh;
+
 	width: 100%;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	height: 50px;
 }
-
-footer div {
-	width: 30vw;
-	height: auto;
-
-	display: flex;
-}
-
-footer a {
-	text-decoration: none;
-	color: var(--gray);
-}
-
-footer a:hover {
-	text-decoration: none;
-	color: var(--white);
-}
+/*- FOOTER */
