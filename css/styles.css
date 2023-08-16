@@ -182,8 +182,8 @@ aside .content {
 	display: block;
 	width: 12.5em;
 	padding: 1em;
-	margin-top: 1.25em;
-	margin-bottom: 1.25em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 
 	text-decoration: none;
 	cursor: pointer;
@@ -202,8 +202,13 @@ aside .content {
 
 .aside-item:hover {
 	color: var(--white);
-	font-weight: bolder;
+	font-weight: 800;
 	border: 0.1rem solid var(--light-gray);
+}
+
+.aside-item:hover > i {
+	color: var(--white);
+	font-weight: 800;
 }
 
 /*- ASIDE */
