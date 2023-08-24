@@ -11,6 +11,7 @@
 :root {
 	/* Color variables definition */
 	--black: #232323;
+	--black-opacity: #232323cc;
 	--white: #ccc;
 	--gray: #525252;
 	--light-gray: #7f7f7f;
@@ -255,8 +256,8 @@ main p:nth-child(3) {
 footer {
 	/* Dimensions */
 	width: 100%;
-	height: 150px;
+	height: auto;
 	/* Styling */
-	background-color: var(--black);
+	background-color: var(--black-opacity);
 }
 /*- FOOTER */
