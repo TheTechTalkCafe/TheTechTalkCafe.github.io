@@ -46,8 +46,8 @@ body {
 
 /* HEADER -*/
 header {
+	position: absolute;
 	position: fixed;
-	position: relative;
 
 	height: 10vh;
 	width: 100%;
