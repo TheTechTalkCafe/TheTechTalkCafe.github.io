@@ -254,10 +254,28 @@ main p:nth-child(3) {
 
 /* FOOTER -*/
 footer {
+	position: relative;
 	/* Dimensions */
 	width: 100%;
-	height: auto;
+	height: 20vh;
 	/* Styling */
 	background-color: var(--black-opacity);
+}
+
+footer img {
+	background-color: #ff6b00;
+	/* Dimensions */
+	width: auto;
+	height: inherit;
+	max-width: 45%;
+	/* Positioning */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#footer-logo-container img {
 }
 /*- FOOTER */
