@@ -1,18 +1,14 @@
 // This script has the same purpose as the styles.css file
 // This script file will provide the basic funtionallity common on every page in this website
 
-// DOM for the aside element
-let aside = document.querySelector('#aside');
-
-// Show aside menu function
-function showAside() {
-	aside.style.visibility = "visible";
-}
-
-// Hide aside menu function
-function closeAside() {
-	aside.style.visibility = "hidden";
-}
+// When all the content is loaded:
+$(document).ready(() => {
+	// Show the ASIDE element
+	$("#hamburger-btn").click(() => {
+		$('aside').toggleClass("active");
+		$("#hamburger-btn").toggleClass("cross");
+	})
+})
 
 // TODO: Add listener to document to close aside if user clicks outside the menu
 // TODO: JS Animation on close&open aside

@@ -6,7 +6,7 @@
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="/css/styles.css" />
 		<!-- Embed the jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 		<!-- TAB icon -->
 		<link rel="icon" href="/img/taza_icon.png" />
 		<!-- Line Awesome -->
@@ -26,8 +26,8 @@
 	<body>
 		<!-- HEADER -->
 		<header>
-			<button id="hamburger-container" onclick="showAside()">
-				<i class="las la-bars"></i>
+			<button id="hamburger-btn">
+				<span></span>
 			</button>
 			<div id="selector">
 				<select
@@ -45,12 +45,6 @@
 		<aside id="aside">
 			<!-- Aside Content -->
 			<div class="content">
-				<!-- Close Hamburger -->
-				<button id="close-hamburger" onclick="closeAside()">
-					<i class="las la-times-circle"></i>
-				</button>
-				<!--/ Close Hamburger -->
-
 				<!-- Items -->
 				<div id="items">
 					<a class="aside-item" href="/html/index.en.html"
