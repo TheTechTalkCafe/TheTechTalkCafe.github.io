@@ -1,0 +1,30 @@
+{
+	"en": [
+		"Why did the computer keep freezing? Because it left its Windows open.",
+		"How do you comfort a JavaScript bug? You console it.",
+		"What's a computer's favorite snack? Microchips!",
+		"Why was the math book sad? Because it had too many problems.",
+		"How many programmers does it take to change a light bulb? None, that's a hardware problem.",
+		"Why don't programmers like nature? It has too many bugs.",
+		"Why did the database administrator leave his wife? She had one-to-many relationships.",
+		"Parallel lines have so much in common. It's a shame they'll never meet.",
+		"What do you call a group of musical whales? An orca-stra.",
+		"I'm reading a book on anti-gravity. It's impossible to put down.",
+		"I used to play piano by ear, but now I use my hands.",
+		"What do you call a fish with no eyes? Fsh."
+	],
+	"es": [
+		"¿Por qué la computadora se congelaba constantemente? Porque dejó el Windows abierto.",
+		"¿Cómo consuelas a un error de JavaScript? console.log().",
+		"¿Cuál es la merienda favorita de una computadora? ¡Microchips!",
+		"¿Por qué el libro de matemáticas estaba triste? Porque tenía demasiados problemas.",
+		"¿Cuántos programadores se necesitan para cambiar una bombilla? Ninguno, eso es un problema de hardware.",
+		"¿Por qué a los programadores no les gusta la naturaleza? Tiene demasiados 'bugs'.",
+		"¿Por qué el administrador de base de datos dejó a su esposa? Ella tenía relaciones uno a muchos.",
+		"Las líneas paralelas tienen mucho en común. Es una lástima que nunca se encuentren.",
+		"¿Cómo llamas a un grupo de ballenas músicas? Una orca-stra",
+		"Estoy leyendo un libro sobre la anti-gravedad. Es imposible dejarlo caer.",
+		"Solía tocar el piano de oído, pero ahora uso mis manos.",
+		"¿Cuál es el animal más antiguo? La cebra, porque está en blanco y negro."
+	]
+}
