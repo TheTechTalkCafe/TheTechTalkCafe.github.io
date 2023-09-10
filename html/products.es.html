@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CSS -->
+		<!-- Main Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/styles.css" />
+		<!-- Products Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/products.css" />
+		<!-- Embed the jQuery library -->
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<!-- TAB icon -->
+		<link rel="icon" href="/img/taza_icon.png" />
+		<!-- Line Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+		/>
+		<!-- Google Fonts Monstserrat -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap"
+			rel="stylesheet"
+		/>
+		<title>TheTechTalkCafe Podcast</title>
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			<button id="hamburger-btn">
+				<span></span>
+			</button>
+			<div id="selector">
+				<select
+					name="language"
+					onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"
+				>
+					<option value="index.en.html">🇬🇧 Inglés</option>
+					<option value="index.es.html" selected>🇪🇸 Español</option>
+				</select>
+			</div>
+		</header>
+		<!--/ HEADER -->
+
+		<!-- ASIDE -->
+		<aside id="aside">
+			<!-- Aside Content -->
+			<div class="content">
+				<!-- Items -->
+				<div id="items">
+					<a class="aside-item" href="/html/index.en.html"
+						>Inicio <i class="las la-home"></i
+					></a>
+					<a class="aside-item" href="/html/soon.html"
+						>Episodios <i class="las la-podcast"></i
+					></a>
+					<a class="aside-item" href="/html/soon.html"
+						>Sobre nosotros <i class="las la-question-circle"></i
+					></a>
+					<a class="aside-item" href="/html//members.es.html"
+						>Miembros <i class="las la-users-cog"></i
+					></a>
+					<a class="aside-item" href="/html/soon.html"
+						>Productos <i class="las la-store-alt"></i
+					></a>
+					<a class="aside-item" href="/html/soon.html"
+						>Contacto <i class="las la-mail-bulk"></i
+					></a>
+				</div>
+				<!--/ Items -->
+			</div>
+			<!--/ Aside Content -->
+		</aside>
+		<!--/ ASIDE -->
+
+		<!-- MAIN -->
+		<main>
+			<!-- Title -->
+			<h3 id="prd-title">Aquí puedes descargar nuestros logos e imágenes</h3>
+			<!--/ Title -->
+
+			<!-- Content container -->
+			<div id="prd-container">
+				<!-- TESTNG PUPOSES -->
+				<div class="prd-item">
+					<img src="/img/logo_gif.gif" class="prd-img" />
+					<p class="prd-title">Esto es un producto</p>
+				</div>
+				<div class="prd-item">
+					<img src="/img/logo_gif.gif" class="prd-img" />
+					<p class="prd-title">
+						Esto es un producto con un título más largo para ver si todo
+						funciona bien
+					</p>
+				</div>
+				<div class="prd-item">
+					<img src="/img/logo_gif.gif" class="prd-img" />
+					<p class="prd-title">Esto es un producto</p>
+				</div>
+				<div class="prd-item">
+					<img src="/img/logo_gif.gif" class="prd-img" />
+					<p class="prd-title">Esto es un producto</p>
+				</div>
+				<div class="prd-item">
+					<img src="/img/logo_gif.gif" class="prd-img" />
+					<p class="prd-title">Esto es un producto</p>
+				</div>
+				<div class="prd-item">
+					<img src="/img/logo_gif.gif" class="prd-img" />
+					<p class="prd-title">Esto es un producto</p>
+				</div>
+				<div class="prd-item">
+					<img src="/img/logo_gif.gif" class="prd-img" />
+					<p class="prd-title">Esto es un producto</p>
+				</div>
+				<div class="prd-item">
+					<img src="/img/logo_gif.gif" class="prd-img" />
+					<p class="prd-title">Esto es un producto</p>
+				</div>
+				<div class="prd-item">
+					<img src="/img/logo_gif.gif" class="prd-img" />
+					<p class="prd-title">Esto es un producto</p>
+				</div>
+				<div class="prd-item">
+					<img src="/img/logo_gif.gif" class="prd-img" />
+					<p class="prd-title">Esto es un producto</p>
+				</div>
+				<div class="prd-item">
+					<img src="/img/logo_gif.gif" class="prd-img" />
+					<p class="prd-title">Esto es un producto</p>
+				</div>
+				<div class="prd-item">
+					<img src="/img/logo_gif.gif" class="prd-img" />
+					<p class="prd-title">Esto es un producto</p>
+				</div>
+				<!--/ TESTNG PUPOSES -->
+			</div>
+			<!--/ Content container -->
+		</main>
+		<!--/ MAIN -->
+
+		<!-- FOOTER -->
+		<footer>
+			<div id="joke"></div>
+			<img
+				src="/img/logo_gif.gif"
+				alt="GIF del logo de The Tech Talk Cafe"
+			/>
+			<ul>
+				<li><a href="/html/index.es.html">Página Principal</a></li>
+				<li><a href="/html/soon.html">Episodios</a></li>
+				<li><a href="/html/soon.html">Sobre Nosotros</a></li>
+				<li><a href="/html/members.es.html">Miembros</a></li>
+				<li><a href="/html/products.es.html">Productos</a></li>
+				<li><a href="/html/soon.html">Contacto</a></li>
+			</ul>
+		</footer>
+		<!--/ FOOTER -->
+
+		<!-- JS -->
+		<script src="/js/script.js"></script>
+		<script src="/js/welcome.js"></script>
+	</body>
+</html>
