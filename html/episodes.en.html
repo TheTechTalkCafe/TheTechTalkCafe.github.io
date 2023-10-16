@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CSS -->
+		<!-- Main Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/styles.css" />
+		<!-- Products Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/products.css" />
+		<!-- Embed the jQuery library -->
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<!-- TAB icon -->
+		<link rel="icon" href="/img/taza_icon.png" />
+		<!-- Line Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+		/>
+		<!-- Google Fonts Monstserrat -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap"
+			rel="stylesheet"
+		/>
+		<title>TheTechTalkCafe Podcast</title>
+	</head>
+	<body>
+		<!-- TEMPORARY MESSAGE -->
+		<div id="tmp-container">
+			<div class="blur"></div>
+			<div class="msg">
+				<h1>Not Available</h1>
+				<p>
+					This page is currently not available yet, still under
+					development.
+				</p>
+				<a href="index.en.html">Go Back Home</a>
+			</div>
+		</div>
+		<!--/ TEMPORARY MESSAGE -->
+		<!-- HEADER -->
+		<header>
+			<button id="hamburger-btn">
+				<span></span>
+			</button>
+			<div id="selector">
+				<select
+					name="language"
+					onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"
+				>
+					<option value="products.en.html" selected>🇬🇧 English</option>
+					<option value="products.es.html">🇪🇸 Spanish</option>
+				</select>
+			</div>
+		</header>
+		<!--/ HEADER -->
+
+		<!-- ASIDE -->
+		<aside id="aside">
+			<!-- Aside Content -->
+			<div class="content">
+				<!-- Items -->
+				<div id="items">
+					<a class="aside-item" href="/html/index.en.html"
+						>Home <i class="las la-home"></i
+					></a>
+					<a class="aside-item" href="/html/soon.html"
+						>Episodes <i class="las la-podcast"></i
+					></a>
+					<a class="aside-item" href="/html/soon.html"
+						>About Us <i class="las la-question-circle"></i
+					></a>
+					<a class="aside-item" href="/html/members.en.html"
+						>Members <i class="las la-users-cog"></i
+					></a>
+					<a class="aside-item" href="/html/products.en.html"
+						>Products <i class="las la-store-alt"></i
+					></a>
+					<a class="aside-item" href="/html/soon.html"
+						>Contact <i class="las la-mail-bulk"></i
+					></a>
+				</div>
+				<!--/ Items -->
+			</div>
+			<!--/ Aside Content -->
+		</aside>
+		<!--/ ASIDE -->
+
+		<!-- MAIN -->
+		<main>
+			<!-- Title -->
+			<h3 id="prd-title">Here you can see all of our previous episodes!</h3>
+			<!--/ Title -->
+		</main>
+		<!--/ MAIN -->
+
+		<!-- FOOTER -->
+		<footer>
+			<div id="joke"></div>
+			<img src="/img/logo_gif.gif" alt="The Tech Talk Café GIF logo" />
+			<ul>
+				<li><a href="/html/index.en.html">Home Page</a></li>
+				<li><a href="/html/soon.html">Episodes</a></li>
+				<li><a href="/html/soon.html">About Us</a></li>
+				<li><a href="/html/members.en.html">Members</a></li>
+				<li><a href="/html/products.en.html">Products</a></li>
+				<li><a href="/html/soon.html">Contact</a></li>
+			</ul>
+		</footer>
+		<!--/ FOOTER -->
+
+		<!-- JS -->
+		<script src="/js/script.js"></script>
+		<script src="/js/welcome.js"></script>
+	</body>
+</html>
